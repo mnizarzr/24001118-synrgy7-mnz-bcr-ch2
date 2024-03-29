@@ -1,0 +1,130 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.btn-success {
+  background-color: #5cb85f !important;
+  border-radius: 2px !important;
+  border: unset !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+}
+
+nav li {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+header h1 {
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+header h6 {
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 16px;
+  line-height: 20px;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+#adv h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#adv p,
+li {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+#why h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#why h6 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+#testi h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#testi h6 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.carousel-item h4 {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 8px 0;
+}
+
+.carousel-item h5 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-body > h5 {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 16px auto;
+}
+
+.card-body > p {
+  text-align: justify;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.acc-item {
+  width: 668px;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  margin-bottom: 16px;
+}
+
+#faq h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#faq h6 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 16px;
+}
+
+#footer-socmeds > img {
+  margin-right: 16px;
+}
+
+footer > nav > ul > li {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+footer {
+  font-size: 14px;
+}
