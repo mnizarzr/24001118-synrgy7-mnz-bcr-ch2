@@ -12,56 +12,68 @@
 </head>
 
 <body>
-
     <header class="w-100" style="background-color: #F1F3FF;">
-        <nav class="navbar justify-content-between">
-            <div class="container-fluid" style="margin: 16px 40px;">
+        <nav id="nav" class="navbar navbar-expand-md justify-content-between">
+            <div class="container-fluid">
                 <div class="navbar-brand" style="width: 150px; height: 40px; background-color: blue;">
                     <span>Brand</span>
                 </div>
-                <ul class="nav justify-content-between text-center align-items-center align-middle list-unstyled"
-                    style="min-width: 25vw;">
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#">Our Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#">Why Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#">Testimonial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#">FAQ</a>
-                    </li>
-                    <li class="nav-item ms-4">
-                        <button class="btn btn-success">
-                            <a class="text-white text-decoration-none" href="#">Register</a>
-                        </button>
-                    </li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BCR</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end">
+                        <ul
+                            class="nav list-unstyled">
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="#">Our Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="#">Why Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="#">Testimonial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="#">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-success">
+                                    <a class="text-white text-decoration-none" href="#">Register</a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
 
-            </div>
+
+                </div>
         </nav>
         <div class="row my-5 m-0 justify-content-between">
-            <div class="col-8 ms-5" style="max-width: 50%;">
+            <div id="htagline" class="col-md-6">
                 <h1 class="fw-bold">Sewa & Rental Mobil Terbaik di kawasan Malang</h1>
-                <h6 class="my-4">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan
+                <h6 class="mb-4">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan
                     harga terjangkau.
                     Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</h6>
                 <button class="btn btn-success" style="margin-bottom: 16px;">
                     <a class="text-white text-decoration-none" href="#">Mulai Sewa Mobil</a>
                 </button>
             </div>
-            <img src="assets/images/img_car.png" alt="Car" class="col-4 position-relative bottom-0 end-0 p-0">
+            <img class="col-md-6 position-relative bottom-0 end-0 p-0" src="assets/images/img_car.png" alt="Car">
         </div>
     </header>
 
-    <main>
+    <main class="container-fluid">
 
         <!-- Best Car Rental -->
-        <section id="adv" class="row row-cols-2 w-100 justify-content-center">
-            <img src="assets/images/img_service.png" style="width: 380px; height: auto;" alt="" srcset="">
-            <div style="margin-left: 100px; max-width: 468px;">
+        <section id="adv" class="row row-cols-md-2 w-auto justify-content-center">
+            <img class="p-0" src="assets/images/img_service.png" alt="">
+            <div id="best-desc" style="max-width: 468px; margin-top: 16px;">
                 <h2>Best Car Rental for any kind of trip in Malang</h2>
                 <p>Sewa mobil di Malang bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain,
                     kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding,
@@ -82,18 +94,18 @@
         </section>
 
         <!-- Why us -->
-        <section id="why" class="container-fluid d-flex flex-column align-items-center">
-            <h2 style="text-align: left;">Why Us?</h2>
-            <h6 style="text-align: left;">Mengapa harus pilih Binar Car Rental?</h6>
-            <div class="row gap-4">
-                <div class="card" style="width: 18rem;">
+        <section id="why" class="container">
+            <h2 class="text-center text-md-start">Why Us?</h2>
+            <h6 class="text-center text-md-start">Mengapa harus pilih Binar Car Rental?</h6>
+            <div class="row gap-md-0 gap-2 justify-content-between">
+                <div class="card col-md-3">
                     <div class="card-body">
                         <img class="mt-2" src="assets/icons/icon_complete.png" alt="">
                         <h5 class="my-2 text-black fw-bold">Mobil Lengkap</h5>
                         <p class="card-text">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat.</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card col-md-3">
                     <div class="card-body">
                         <img class="mt-2" src="assets/icons/icon_price.png" alt="">
                         <h5 class="my-2 text-black fw-bold">Harga Murah</h5>
@@ -101,7 +113,7 @@
                             lain.</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card col-md-3">
                     <div class="card-body">
                         <img class="mt-2" src="assets/icons/icon_24hrs.png" alt="">
                         <h5 class="my-2 text-black fw-bold">Layanan 24 Jam</h5>
@@ -109,7 +121,7 @@
                             akhir minggu.</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card col-md-3">
                     <div class="card-body">
                         <img class="mt-2" src="assets/icons/icon_professional.png" alt="">
                         <h5 class="my-2 text-black fw-bold">Sopir Profesional</h5>
@@ -117,16 +129,14 @@
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <section id="testi" class="container-fluid d-flex flex-column align-items-center">
             <h2>Testimonial</h2>
             <h6>Berbagai review positif dari para pelanggan kami</h6>
-            <div id="carouselExample" class="carousel slide"
-                style="max-width: 50%; height: 270px; background-color: #F1F3FF; padding: 70px 30px; border-radius: 8px;">
-                <div class="carousel-inner">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner" style="left: 0%; top: 25%;">
                     <div class="carousel-item active">
                         <div class="d-flex flex-row align-items-center">
                             <img src="assets/images/img_photo.png" alt="" width="50" height="50"
@@ -134,14 +144,10 @@
                             <div>
                                 <img src="assets/icons/rating_stars.png" height="16px">
                                 <h4>
-                                    "Ut mollit officia voluptate officia amet fugiat consequat pariatur. Exercitation
-                                    enim
-                                    aute labore elit ullamco elit officia sint velit laboris excepteur laboris pariatur.
-                                    Laboris minim pariatur aute mollit. Excepteur velit tempor labore aute voluptate
-                                    laboris
-                                    ut id nulla nostrud tempor est culpa. Deserunt dolor fugiat minim et ad nisi eiusmod
-                                    ut
-                                    mollit enim culpa ex sint. Id consequat mollit minim cillum sit ea."
+                                    "Eiusmod laborum consequat non cillum Lorem. Tempor nulla amet adipisicing
+                                    consectetur do in sint et ipsum et duis amet aliqua enim. Occaecat eu excepteur
+                                    minim anim nulla aliqua. Officia incididunt minim qui duis ipsum deserunt magna
+                                    sit."
                                 </h4>
                                 <h5 class="fw-bold">
                                     John Dee 32, Bromo
@@ -193,24 +199,23 @@
             <div
                 style="width: 1161px; min-height: 326px; background-color: #0D28A6; border-radius: 8px; padding-top: 64px;">
                 <h2 style="color: white; font-weight: 700; font-size: 36px;">Sewa Mobil di Malang Sekarang</h2>
-                <p style="color: white; font-weight: 300; font-size: 14px;">Fugiat ipsum tempor consequat culpa deserunt
+                <p style="color: white; font-weight: 300; font-size: 14px; margin-bottom: 52px;">Fugiat ipsum tempor
+                    consequat culpa deserunt
                     sit
                     anim tempor laboris Lorem reprehenderit.<br>Aute
                     exercitation non labore cillum do sint veniam Lorem.</p>
-                <button class="btn btn-success" style="margin-top: 52px;">
+                <button class="btn btn-success">
                     Mulai Sewa Mobil
                 </button>
             </div>
         </section>
 
-        <section id="faq" class="d-flex flex-row justify-content-center">
-            <div class="col-4">
+        <section id="faq" class="row align-content-center">
+            <div class="col-md-4">
                 <h2>Frequently Asked Question</h2>
                 <h6>Quis commodo dolor culpa magna culpa ut dolor fugiat ipsum.</h6>
             </div>
-
-
-            <div class="accordion" id="accordionFlushExample">
+            <div class="accordion col-md-8" id="accordionFlushExample">
                 <div class="acc-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -291,14 +296,14 @@
 
     </main>
 
-    <footer class="w-100" style="padding: 100px;">
-        <div class="row justify-content-between">
-            <div class="col-2">
+    <footer id="footer" class="container" style="padding-bottom: 48px;">
+        <div class="row flex-md-nowrap gap-2 justify-content-between">
+            <div class="col-md-3">
                 <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
                 <p>binarcarrental@gmail.com</p>
                 <p>081-233-334-808</p>
             </div>
-            <nav class="col-2">
+            <nav class="col-md-3">
                 <ul class="list-unstyled">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Our Services</a>
@@ -314,7 +319,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="col-2">
+            <div class="col-md-3">
                 <p>Connect with us</p>
                 <div id="footer-socmeds">
                     <img src="assets/icons/icon_facebook.png" alt="Facebook" srcset="">
@@ -324,7 +329,7 @@
                     <img src="assets/icons/icon_twitch.png" alt="Twitch" srcset="">
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-md-3">
                 <p>Copyright &copy Binar 2022</p>
                 <div style="width: 150px; height: 40px; background-color: blue;">
                     <span>Brand</span>
